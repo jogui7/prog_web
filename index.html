@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e713ceea1.js" crossorigin="anonymous"></script>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header data-target="#top">
+    <header>
         <p>SLOGAN</p>
     </header>
     <div class="menu">
         <div class="logo">
-            <a href="index.html"><img src="https://via.placeholder.com/150x50" alt="logo"></a>
+            <a href="index.html"><img src="https://via.placeholder.com/100x50" alt="logo"></a>
         </div>
-        <nav>
-            <a href="#top">HOME</a>
-            <a href="">PRODUTOS</a>
-            <a href="">CONTATO</a>
-            <a href="">SOBRE</a>
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check"/>
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>   
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                    <li><a href="#video">SOBRE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>                       
+            </nav>
             <div class="shopping-cart">
                 <a href=""><img src="https://via.placeholder.com/50x50" alt="logo"></a>
             </div>
-            <div class="hamburguer">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+        </div>
     </div>
     <div id="intro">
         <div class="intro-content">
@@ -45,13 +49,16 @@
             <h3>Produtos em Destaque</h3>
             <div class="produtos-list">
                 <div class="produtos-item">
-                    <img src="https://s2.glbimg.com/1CaAbKUXmw9_27aW-oP0XCiTVDc=/0x0:3240x2160/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/X/1/6KAgaSQaeJ4NPq2XLzUQ/birdseclipse-caldas-3240.jpg" alt="">
+                    <img src="https://via.placeholder.com/200x200" alt="">
                     <a>Titulo</a>
                     <div class="produto-desc">
                         <p>
                             Lorem impsun asjdna askjd ahi ai hdasi hwqi dqw qiduwq iduwqhd iquu qweq    
                         </p>
-                        <span>Preço: R$ 00,00</span>
+                        <div class="container">
+                            <span>R$ 00,00</span>
+                            <a href="#">+ <span></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="produtos-item">
@@ -61,7 +68,10 @@
                         <p>
                             Lorem impsun asjdna askjd ahi ai hdasi hwqi dqw qiduwq iduwqhd iquu qweq    
                         </p>
-                        <span>Preço: R$ 00,00</span>
+                        <div class="container">
+                            <span>R$ 00,00</span>
+                            <a href="#">+ <span></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="produtos-item">
@@ -71,7 +81,10 @@
                         <p>
                             Lorem impsun asjdna askjd ahi ai hdasi hwqi dqw qiduwq iduwqhd iquu qweq    
                         </p>
-                        <span>Preço: R$ 00,00</span>
+                        <div class="container">
+                            <span>R$ 00,00</span>
+                            <a href="#">+ <span></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="produtos-item">
@@ -81,7 +94,10 @@
                         <p>
                             Lorem impsun asjdna askjd ahi ai hdasi hwqi dqw qiduwq iduwqhd iquu qweq    
                         </p>
-                        <span>Preço: R$ 00,00</span>
+                        <div class="container">
+                            <span>R$ 00,00</span>
+                            <a href="#">+ <span></span></a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -36,29 +36,79 @@ header {
     background-color: black;
 }
 
+.menu .container {
+    align-items: center;
+}
+
 .menu nav{
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-right: 20px;
 }
 
-.menu nav a {
+.menu nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu nav ul li a {
     color: white;
     text-decoration: none;
     margin-left: 15px;
 }
 
-.hamburguer {
+
+
+.menu nav input {
     display: none;
 }
 
+.menu nav label{
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+
+
 @media(max-width: 800px){
     .menu nav {
-        height: 1px;
-        width: 1px;
-        display: none;
+        order: 2;
+    }
+
+    .menu nav label {
+        display: block;
+    }
+
+    .menu nav ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 110px);
+        top: 110px;
+        right: -100%;
+        box-sizing: border-box;
+        padding-top: 20px;
+        text-align: center;
+        background-color: black;
+        transition: all .5s;
+    }
+
+    .menu nav ul li {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .shopping-cart {
+        order: 1;
+        margin-right: 20px;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
     }
 }
 
@@ -142,7 +192,6 @@ header {
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
-    cursor: pointer;
     transition: 0.2s;
 }
 
@@ -183,13 +232,39 @@ header {
     font-size: 14px;
     line-height: 22px;
     text-align: left;
-
+    max-height: 130px;
+    overflow: hidden;
 }
 
-.produto-desc span{
+.produto-desc .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto-desc .container span{
     text-align: left;
     font-weight: bold;
     position: relative;
+}
+
+.produto-desc .container a {
+    display: flex;
+    margin: 0;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.produto-desc .container a span{
+    display: flex;
+
+    margin-left: 5px;
+
+    background-image: url("../img/carrinho.png");
+
+    height: 25px;
+    width: 25px;
 }
 
 #video {
@@ -363,7 +438,7 @@ header {
         margin: 20px auto;
     }
 
-    .container {
+    form .container {
         display: block;
     }
 
@@ -448,6 +523,10 @@ footer p {
         display: block;
         height: auto;
         padding: 10px 10%;;
+    }
+
+    footer p {
+        text-align: center;
     }
 
     .sociais {
