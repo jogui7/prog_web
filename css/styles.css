@@ -398,17 +398,6 @@ footer p {
     line-height: 22px;
 }
 
-.copyright {
-    height: 20px;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #fcfcfc;
-}
-
 .sociais {
     display: flex;
     justify-content: center;
@@ -434,6 +423,48 @@ footer p {
     height: 30px;
 }
 
+.copyright {
+    height: 20px;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fcfcfc;
+}
+
+
+
 .copyright p {
     font-size: 12px;
 }
+
+@media (max-width: 739px) {
+    footer {
+        display: block;
+        height: auto;
+        padding: 10px 10%;;
+    }
+
+    .sociais {
+        margin-top: 10px;
+    }
+
+    .sociais p {
+        display: none;
+    }
+
+    .sociais a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .copyright {
+        height: 40px;;
+    }
+}
+
